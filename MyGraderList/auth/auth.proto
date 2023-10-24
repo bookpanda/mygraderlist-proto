@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package auth;
 
-option go_package = "src/proto";
+option go_package = "MyGraderList/auth";
 
 service AuthService {
   rpc Validate(ValidateRequest) returns (ValidateResponse){}
