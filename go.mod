@@ -1,4 +1,4 @@
-module github.com/bookpanda/MyGraderList-proto
+module github.com/bookpanda/mygraderlist-proto
 
 go 1.21.0
 
