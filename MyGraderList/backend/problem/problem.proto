@@ -5,8 +5,7 @@ package problem;
 option go_package = "MyGraderList/backend/problem";
 
 service ProblemService {
-  rpc FindById(FindByIdProblemRequest) returns (FindByIdProblemResponse){}
-  rpc FindByCourseId(FindByCourseIdProblemRequest) returns(FindByCourseIdProblemResponse) {}
+  rpc FindAll(FindAllProblemRequest) returns (FindAllProblemResponse){}
   rpc Create(CreateProblemRequest) returns (CreateProblemResponse){}
   rpc Update(UpdateProblemRequest) returns (UpdateProblemResponse){}
   rpc Delete(DeleteProblemRequest) returns (DeleteProblemResponse){}
@@ -20,21 +19,12 @@ message Problem{
   string name = 5;
 }
 
-// FindById
-message FindByIdProblemRequest{
+// FindAll
+message FindAllProblemRequest{
   string id = 1;
 }
 
-message FindByIdProblemResponse{
-  Problem problem = 1;
-}
-
-// FindByCourseId
-message FindByCourseIdProblemRequest{
-  string courseId = 1;
-}
-
-message FindByCourseIdProblemResponse{
+message FindAllProblemResponse{
   repeated Problem problems = 1;
 }
 
