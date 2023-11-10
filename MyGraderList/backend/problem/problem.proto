@@ -21,7 +21,6 @@ message Problem{
 
 // FindAll
 message FindAllProblemRequest{
-  string id = 1;
 }
 
 message FindAllProblemResponse{
