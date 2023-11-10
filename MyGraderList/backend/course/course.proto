@@ -5,7 +5,7 @@ package course;
 option go_package = "MyGraderList/backend/course";
 
 service CourseService {
-  rpc FindById(FindByIdCourseRequest) returns (FindByIdCourseResponse){}
+  rpc FindAll(FindAllCourseRequest) returns (FindAllCourseResponse){}
   rpc Create(CreateCourseRequest) returns (CreateCourseResponse){}
   rpc Update(UpdateCourseRequest) returns (UpdateCourseResponse){}
   rpc Delete(DeleteCourseRequest) returns (DeleteCourseResponse){}
@@ -18,13 +18,12 @@ message Course{
   string color = 4;
 }
 
-// FindById
-message FindByIdCourseRequest{
-  string id = 1;
+// FindAll
+message FindAllCourseRequest{
 }
 
-message FindByIdCourseResponse{
-  Course course = 1;
+message FindAllCourseResponse{
+  repeated Course courses = 1;
 }
 
 // Create
@@ -38,11 +37,10 @@ message CreateCourseResponse{
 
 // Update
 message UpdateCourseRequest{
-  string id = 1;
-  string courseId = 2;
-  string group = 3;
-  string code = 4;
-  string name = 5;
+  string courseId = 1;
+  string group = 2;
+  string code = 3;
+  string name = 4;
 }
 
 message UpdateCourseResponse{
