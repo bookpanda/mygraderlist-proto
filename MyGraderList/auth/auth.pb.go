@@ -83,6 +83,7 @@ func (x *Credential) GetExpiresIn() int32 {
 	return 0
 }
 
+// Validate
 type ValidateRequest struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
@@ -185,6 +186,7 @@ func (x *ValidateResponse) GetRole() string {
 	return ""
 }
 
+// RefreshToken
 type RefreshTokenRequest struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
@@ -279,6 +281,7 @@ func (x *RefreshTokenResponse) GetCredential() *Credential {
 	return nil
 }
 
+// GetGoogleLoginUrl
 type GetGoogleLoginUrlRequest struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
@@ -364,6 +367,7 @@ func (x *GetGoogleLoginUrlResponse) GetUrl() string {
 	return ""
 }
 
+// VerifyGoogleLogin
 type VerifyGoogleLoginRequest struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
