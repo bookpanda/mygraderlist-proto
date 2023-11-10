@@ -1,0 +1,70 @@
+syntax = "proto3";
+
+package problem;
+
+option go_package = "MyGraderList/backend/problem";
+
+service ProblemService {
+  rpc FindById(FindByIdProblemRequest) returns (FindByIdProblemResponse){}
+  rpc FindByCourseId(FindByCourseIdProblemRequest) returns(FindByCourseIdProblemResponse) {}
+  rpc Create(CreateProblemRequest) returns (CreateProblemResponse){}
+  rpc Update(UpdateProblemRequest) returns (UpdateProblemResponse){}
+  rpc Delete(DeleteProblemRequest) returns (DeleteProblemResponse){}
+}
+
+message Problem{
+  string id = 1;
+  string courseId = 2;
+  string group = 3;
+  string code = 4;
+  string name = 5;
+}
+
+// FindById
+message FindByIdProblemRequest{
+  string id = 1;
+}
+
+message FindByIdProblemResponse{
+  Problem problem = 1;
+}
+
+// FindByCourseId
+message FindByCourseIdProblemRequest{
+  string courseId = 1;
+}
+
+message FindByCourseIdProblemResponse{
+  repeated Problem problems = 1;
+}
+
+// Create
+message CreateProblemRequest{
+  Problem problem = 1;
+}
+
+message CreateProblemResponse{
+  Problem problem = 1;
+}
+
+// Update
+message UpdateProblemRequest{
+  string id = 1;
+  string courseId = 2;
+  string group = 3;
+  string code = 4;
+  string name = 5;
+}
+
+message UpdateProblemResponse{
+  Problem Problem = 1;
+}
+
+// Delete
+message DeleteProblemRequest{
+  string id = 1;
+}
+
+message DeleteProblemResponse{
+  bool success = 1;
+}
