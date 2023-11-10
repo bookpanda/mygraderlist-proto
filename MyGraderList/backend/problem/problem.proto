@@ -45,7 +45,7 @@ message UpdateProblemRequest{
 }
 
 message UpdateProblemResponse{
-  Problem Problem = 1;
+  Problem problem = 1;
 }
 
 // Delete
