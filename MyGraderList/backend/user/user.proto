@@ -9,8 +9,8 @@ service UserService {
   rpc FindByEmail(FindByEmailUserRequest) returns(FindByEmailUserResponse) {}
   rpc Create(CreateUserRequest) returns (CreateUserResponse){}
   rpc Update(UpdateUserRequest) returns (UpdateUserResponse){}
-  rpc Verify(VerifyUserRequest) returns (VerifyUserResponse){}
   rpc Delete(DeleteUserRequest) returns (DeleteUserResponse){}
+  rpc Verify(VerifyUserRequest) returns (VerifyUserResponse){}
 }
 
 message User{
@@ -21,7 +21,6 @@ message User{
 }
 
 // FindOne
-
 message FindOneUserRequest{
   string id = 1;
 }
@@ -31,7 +30,6 @@ message FindOneUserResponse{
 }
 
 // FindByEmail
-
 message FindByEmailUserRequest{
   string email = 1;
 }
@@ -41,7 +39,6 @@ message FindByEmailUserResponse{
 }
 
 // Create
-
 message CreateUserRequest{
   User user = 1;
 }
@@ -51,7 +48,6 @@ message CreateUserResponse{
 }
 
 // Update
-
 message UpdateUserRequest{
   string id = 1;
   string username = 2;
@@ -64,7 +60,6 @@ message UpdateUserResponse{
 }
 
 // Delete
-
 message DeleteUserRequest{
   string id = 1;
 }
@@ -73,18 +68,7 @@ message DeleteUserResponse{
   bool success = 1;
 }
 
-// Create or Update
-
-message CreateOrUpdateUserRequest{
-  User user = 1;
-}
-
-message CreateOrUpdateUserResponse{
-  User user = 1;
-}
-
 // Verify
-
 message VerifyUserRequest{
   string studentId = 1;
   string verifyType = 2;
