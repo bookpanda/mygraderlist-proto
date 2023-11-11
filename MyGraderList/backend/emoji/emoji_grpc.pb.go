@@ -29,7 +29,7 @@ const (
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type EmojiServiceClient interface {
-	FindAll(ctx context.Context, in *FindByUserIdEmojiRequest, opts ...grpc.CallOption) (*FindByUserIdEmojiResponse, error)
+	FindAll(ctx context.Context, in *FindAllEmojiRequest, opts ...grpc.CallOption) (*FindAllEmojiResponse, error)
 	FindByUserId(ctx context.Context, in *FindByUserIdEmojiRequest, opts ...grpc.CallOption) (*FindByUserIdEmojiResponse, error)
 	Create(ctx context.Context, in *CreateEmojiRequest, opts ...grpc.CallOption) (*CreateEmojiResponse, error)
 	Delete(ctx context.Context, in *DeleteEmojiRequest, opts ...grpc.CallOption) (*DeleteEmojiResponse, error)
@@ -43,8 +43,8 @@ func NewEmojiServiceClient(cc grpc.ClientConnInterface) EmojiServiceClient {
 	return &emojiServiceClient{cc}
 }
 
-func (c *emojiServiceClient) FindAll(ctx context.Context, in *FindByUserIdEmojiRequest, opts ...grpc.CallOption) (*FindByUserIdEmojiResponse, error) {
-	out := new(FindByUserIdEmojiResponse)
+func (c *emojiServiceClient) FindAll(ctx context.Context, in *FindAllEmojiRequest, opts ...grpc.CallOption) (*FindAllEmojiResponse, error) {
+	out := new(FindAllEmojiResponse)
 	err := c.cc.Invoke(ctx, EmojiService_FindAll_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -83,7 +83,7 @@ func (c *emojiServiceClient) Delete(ctx context.Context, in *DeleteEmojiRequest,
 // All implementations should embed UnimplementedEmojiServiceServer
 // for forward compatibility
 type EmojiServiceServer interface {
-	FindAll(context.Context, *FindByUserIdEmojiRequest) (*FindByUserIdEmojiResponse, error)
+	FindAll(context.Context, *FindAllEmojiRequest) (*FindAllEmojiResponse, error)
 	FindByUserId(context.Context, *FindByUserIdEmojiRequest) (*FindByUserIdEmojiResponse, error)
 	Create(context.Context, *CreateEmojiRequest) (*CreateEmojiResponse, error)
 	Delete(context.Context, *DeleteEmojiRequest) (*DeleteEmojiResponse, error)
@@ -93,7 +93,7 @@ type EmojiServiceServer interface {
 type UnimplementedEmojiServiceServer struct {
 }
 
-func (UnimplementedEmojiServiceServer) FindAll(context.Context, *FindByUserIdEmojiRequest) (*FindByUserIdEmojiResponse, error) {
+func (UnimplementedEmojiServiceServer) FindAll(context.Context, *FindAllEmojiRequest) (*FindAllEmojiResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method FindAll not implemented")
 }
 func (UnimplementedEmojiServiceServer) FindByUserId(context.Context, *FindByUserIdEmojiRequest) (*FindByUserIdEmojiResponse, error) {
@@ -118,7 +118,7 @@ func RegisterEmojiServiceServer(s grpc.ServiceRegistrar, srv EmojiServiceServer)
 }
 
 func _EmojiService_FindAll_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(FindByUserIdEmojiRequest)
+	in := new(FindAllEmojiRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -130,7 +130,7 @@ func _EmojiService_FindAll_Handler(srv interface{}, ctx context.Context, dec fun
 		FullMethod: EmojiService_FindAll_FullMethodName,
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(EmojiServiceServer).FindAll(ctx, req.(*FindByUserIdEmojiRequest))
+		return srv.(EmojiServiceServer).FindAll(ctx, req.(*FindAllEmojiRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
