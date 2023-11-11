@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.3.0
 // - protoc             v4.24.4
-// source: MyGraderList/auth/auth.proto
+// source: auth.proto
 
 package auth
 
@@ -80,17 +80,16 @@ func (c *authServiceClient) VerifyGoogleLogin(ctx context.Context, in *VerifyGoo
 }
 
 // AuthServiceServer is the server API for AuthService service.
-// All implementations must embed UnimplementedAuthServiceServer
+// All implementations should embed UnimplementedAuthServiceServer
 // for forward compatibility
 type AuthServiceServer interface {
 	Validate(context.Context, *ValidateRequest) (*ValidateResponse, error)
 	RefreshToken(context.Context, *RefreshTokenRequest) (*RefreshTokenResponse, error)
 	GetGoogleLoginUrl(context.Context, *GetGoogleLoginUrlRequest) (*GetGoogleLoginUrlResponse, error)
 	VerifyGoogleLogin(context.Context, *VerifyGoogleLoginRequest) (*VerifyGoogleLoginResponse, error)
-	mustEmbedUnimplementedAuthServiceServer()
 }
 
-// UnimplementedAuthServiceServer must be embedded to have forward compatible implementations.
+// UnimplementedAuthServiceServer should be embedded to have forward compatible implementations.
 type UnimplementedAuthServiceServer struct {
 }
 
@@ -106,7 +105,6 @@ func (UnimplementedAuthServiceServer) GetGoogleLoginUrl(context.Context, *GetGoo
 func (UnimplementedAuthServiceServer) VerifyGoogleLogin(context.Context, *VerifyGoogleLoginRequest) (*VerifyGoogleLoginResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method VerifyGoogleLogin not implemented")
 }
-func (UnimplementedAuthServiceServer) mustEmbedUnimplementedAuthServiceServer() {}
 
 // UnsafeAuthServiceServer may be embedded to opt out of forward compatibility for this service.
 // Use of this interface is not recommended, as added methods to AuthServiceServer will
@@ -216,5 +214,5 @@ var AuthService_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "MyGraderList/auth/auth.proto",
+	Metadata: "auth.proto",
 }

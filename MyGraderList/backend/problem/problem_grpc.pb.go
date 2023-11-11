@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.3.0
 // - protoc             v4.24.4
-// source: mygraderlist/backend/problem/problem.proto
+// source: problem.proto
 
 package problem
 
@@ -80,17 +80,16 @@ func (c *problemServiceClient) Delete(ctx context.Context, in *DeleteProblemRequ
 }
 
 // ProblemServiceServer is the server API for ProblemService service.
-// All implementations must embed UnimplementedProblemServiceServer
+// All implementations should embed UnimplementedProblemServiceServer
 // for forward compatibility
 type ProblemServiceServer interface {
 	FindAll(context.Context, *FindAllProblemRequest) (*FindAllProblemResponse, error)
 	Create(context.Context, *CreateProblemRequest) (*CreateProblemResponse, error)
 	Update(context.Context, *UpdateProblemRequest) (*UpdateProblemResponse, error)
 	Delete(context.Context, *DeleteProblemRequest) (*DeleteProblemResponse, error)
-	mustEmbedUnimplementedProblemServiceServer()
 }
 
-// UnimplementedProblemServiceServer must be embedded to have forward compatible implementations.
+// UnimplementedProblemServiceServer should be embedded to have forward compatible implementations.
 type UnimplementedProblemServiceServer struct {
 }
 
@@ -106,7 +105,6 @@ func (UnimplementedProblemServiceServer) Update(context.Context, *UpdateProblemR
 func (UnimplementedProblemServiceServer) Delete(context.Context, *DeleteProblemRequest) (*DeleteProblemResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method Delete not implemented")
 }
-func (UnimplementedProblemServiceServer) mustEmbedUnimplementedProblemServiceServer() {}
 
 // UnsafeProblemServiceServer may be embedded to opt out of forward compatibility for this service.
 // Use of this interface is not recommended, as added methods to ProblemServiceServer will
@@ -216,5 +214,5 @@ var ProblemService_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "mygraderlist/backend/problem/problem.proto",
+	Metadata: "problem.proto",
 }

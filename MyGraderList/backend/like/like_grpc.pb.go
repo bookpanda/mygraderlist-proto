@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.3.0
 // - protoc             v4.24.4
-// source: mygraderlist/backend/like/like.proto
+// source: like.proto
 
 package like
 
@@ -69,16 +69,15 @@ func (c *likeServiceClient) Delete(ctx context.Context, in *DeleteLikeRequest, o
 }
 
 // LikeServiceServer is the server API for LikeService service.
-// All implementations must embed UnimplementedLikeServiceServer
+// All implementations should embed UnimplementedLikeServiceServer
 // for forward compatibility
 type LikeServiceServer interface {
 	FindByUserId(context.Context, *FindByUserIdLikeRequest) (*FindByUserIdLikeResponse, error)
 	Create(context.Context, *CreateLikeRequest) (*CreateLikeResponse, error)
 	Delete(context.Context, *DeleteLikeRequest) (*DeleteLikeResponse, error)
-	mustEmbedUnimplementedLikeServiceServer()
 }
 
-// UnimplementedLikeServiceServer must be embedded to have forward compatible implementations.
+// UnimplementedLikeServiceServer should be embedded to have forward compatible implementations.
 type UnimplementedLikeServiceServer struct {
 }
 
@@ -91,7 +90,6 @@ func (UnimplementedLikeServiceServer) Create(context.Context, *CreateLikeRequest
 func (UnimplementedLikeServiceServer) Delete(context.Context, *DeleteLikeRequest) (*DeleteLikeResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method Delete not implemented")
 }
-func (UnimplementedLikeServiceServer) mustEmbedUnimplementedLikeServiceServer() {}
 
 // UnsafeLikeServiceServer may be embedded to opt out of forward compatibility for this service.
 // Use of this interface is not recommended, as added methods to LikeServiceServer will
@@ -179,5 +177,5 @@ var LikeService_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "mygraderlist/backend/like/like.proto",
+	Metadata: "like.proto",
 }

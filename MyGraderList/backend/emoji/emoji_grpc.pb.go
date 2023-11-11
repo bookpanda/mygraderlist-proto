@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.3.0
 // - protoc             v4.24.4
-// source: mygraderlist/backend/emoji/emoji.proto
+// source: emoji.proto
 
 package emoji
 
@@ -80,17 +80,16 @@ func (c *emojiServiceClient) Delete(ctx context.Context, in *DeleteEmojiRequest,
 }
 
 // EmojiServiceServer is the server API for EmojiService service.
-// All implementations must embed UnimplementedEmojiServiceServer
+// All implementations should embed UnimplementedEmojiServiceServer
 // for forward compatibility
 type EmojiServiceServer interface {
 	FindAll(context.Context, *FindByUserIdEmojiRequest) (*FindByUserIdEmojiResponse, error)
 	FindByUserId(context.Context, *FindByUserIdEmojiRequest) (*FindByUserIdEmojiResponse, error)
 	Create(context.Context, *CreateEmojiRequest) (*CreateEmojiResponse, error)
 	Delete(context.Context, *DeleteEmojiRequest) (*DeleteEmojiResponse, error)
-	mustEmbedUnimplementedEmojiServiceServer()
 }
 
-// UnimplementedEmojiServiceServer must be embedded to have forward compatible implementations.
+// UnimplementedEmojiServiceServer should be embedded to have forward compatible implementations.
 type UnimplementedEmojiServiceServer struct {
 }
 
@@ -106,7 +105,6 @@ func (UnimplementedEmojiServiceServer) Create(context.Context, *CreateEmojiReque
 func (UnimplementedEmojiServiceServer) Delete(context.Context, *DeleteEmojiRequest) (*DeleteEmojiResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method Delete not implemented")
 }
-func (UnimplementedEmojiServiceServer) mustEmbedUnimplementedEmojiServiceServer() {}
 
 // UnsafeEmojiServiceServer may be embedded to opt out of forward compatibility for this service.
 // Use of this interface is not recommended, as added methods to EmojiServiceServer will
@@ -216,5 +214,5 @@ var EmojiService_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "mygraderlist/backend/emoji/emoji.proto",
+	Metadata: "emoji.proto",
 }

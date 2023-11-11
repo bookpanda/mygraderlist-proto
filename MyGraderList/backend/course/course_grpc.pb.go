@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.3.0
 // - protoc             v4.24.4
-// source: mygraderlist/backend/course/course.proto
+// source: course.proto
 
 package course
 
@@ -80,17 +80,16 @@ func (c *courseServiceClient) Delete(ctx context.Context, in *DeleteCourseReques
 }
 
 // CourseServiceServer is the server API for CourseService service.
-// All implementations must embed UnimplementedCourseServiceServer
+// All implementations should embed UnimplementedCourseServiceServer
 // for forward compatibility
 type CourseServiceServer interface {
 	FindAll(context.Context, *FindAllCourseRequest) (*FindAllCourseResponse, error)
 	Create(context.Context, *CreateCourseRequest) (*CreateCourseResponse, error)
 	Update(context.Context, *UpdateCourseRequest) (*UpdateCourseResponse, error)
 	Delete(context.Context, *DeleteCourseRequest) (*DeleteCourseResponse, error)
-	mustEmbedUnimplementedCourseServiceServer()
 }
 
-// UnimplementedCourseServiceServer must be embedded to have forward compatible implementations.
+// UnimplementedCourseServiceServer should be embedded to have forward compatible implementations.
 type UnimplementedCourseServiceServer struct {
 }
 
@@ -106,7 +105,6 @@ func (UnimplementedCourseServiceServer) Update(context.Context, *UpdateCourseReq
 func (UnimplementedCourseServiceServer) Delete(context.Context, *DeleteCourseRequest) (*DeleteCourseResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method Delete not implemented")
 }
-func (UnimplementedCourseServiceServer) mustEmbedUnimplementedCourseServiceServer() {}
 
 // UnsafeCourseServiceServer may be embedded to opt out of forward compatibility for this service.
 // Use of this interface is not recommended, as added methods to CourseServiceServer will
@@ -216,5 +214,5 @@ var CourseService_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "mygraderlist/backend/course/course.proto",
+	Metadata: "course.proto",
 }

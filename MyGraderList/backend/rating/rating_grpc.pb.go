@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.3.0
 // - protoc             v4.24.4
-// source: mygraderlist/backend/rating/rating.proto
+// source: rating.proto
 
 package rating
 
@@ -91,7 +91,7 @@ func (c *ratingServiceClient) Delete(ctx context.Context, in *DeleteRatingReques
 }
 
 // RatingServiceServer is the server API for RatingService service.
-// All implementations must embed UnimplementedRatingServiceServer
+// All implementations should embed UnimplementedRatingServiceServer
 // for forward compatibility
 type RatingServiceServer interface {
 	FindAll(context.Context, *FindAllRatingRequest) (*FindAllRatingResponse, error)
@@ -99,10 +99,9 @@ type RatingServiceServer interface {
 	Create(context.Context, *CreateRatingRequest) (*CreateRatingResponse, error)
 	Update(context.Context, *UpdateRatingRequest) (*UpdateRatingResponse, error)
 	Delete(context.Context, *DeleteRatingRequest) (*DeleteRatingResponse, error)
-	mustEmbedUnimplementedRatingServiceServer()
 }
 
-// UnimplementedRatingServiceServer must be embedded to have forward compatible implementations.
+// UnimplementedRatingServiceServer should be embedded to have forward compatible implementations.
 type UnimplementedRatingServiceServer struct {
 }
 
@@ -121,7 +120,6 @@ func (UnimplementedRatingServiceServer) Update(context.Context, *UpdateRatingReq
 func (UnimplementedRatingServiceServer) Delete(context.Context, *DeleteRatingRequest) (*DeleteRatingResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method Delete not implemented")
 }
-func (UnimplementedRatingServiceServer) mustEmbedUnimplementedRatingServiceServer() {}
 
 // UnsafeRatingServiceServer may be embedded to opt out of forward compatibility for this service.
 // Use of this interface is not recommended, as added methods to RatingServiceServer will
@@ -253,5 +251,5 @@ var RatingService_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "mygraderlist/backend/rating/rating.proto",
+	Metadata: "rating.proto",
 }
