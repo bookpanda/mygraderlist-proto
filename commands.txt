@@ -2,6 +2,6 @@ protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=p
 
 go mod tidy
 
-git tag v0.0.4
-git push origin v0.0.4
-GOPROXY=proxy.golang.org go list -m github.com/bookpanda/mygraderlist-proto@v0.0.4
+git tag v0.0.6
+git push origin v0.0.6
+GOPROXY=proxy.golang.org go list -m github.com/bookpanda/mygraderlist-proto@v0.0.6
