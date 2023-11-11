@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.3.0
 // - protoc             v4.24.4
-// source: MyGraderList/backend/problem/problem.proto
+// source: mygraderlist/backend/problem/problem.proto
 
 package problem
 
@@ -216,5 +216,5 @@ var ProblemService_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "MyGraderList/backend/problem/problem.proto",
+	Metadata: "mygraderlist/backend/problem/problem.proto",
 }

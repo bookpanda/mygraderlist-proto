@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.26.0
 // 	protoc        v4.24.4
-// source: MyGraderList/backend/like/like.proto
+// source: mygraderlist/backend/like/like.proto
 
 package like
 
@@ -33,7 +33,7 @@ type Like struct {
 func (x *Like) Reset() {
 	*x = Like{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_MyGraderList_backend_like_like_proto_msgTypes[0]
+		mi := &file_mygraderlist_backend_like_like_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -46,7 +46,7 @@ func (x *Like) String() string {
 func (*Like) ProtoMessage() {}
 
 func (x *Like) ProtoReflect() protoreflect.Message {
-	mi := &file_MyGraderList_backend_like_like_proto_msgTypes[0]
+	mi := &file_mygraderlist_backend_like_like_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -59,7 +59,7 @@ func (x *Like) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Like.ProtoReflect.Descriptor instead.
 func (*Like) Descriptor() ([]byte, []int) {
-	return file_MyGraderList_backend_like_like_proto_rawDescGZIP(), []int{0}
+	return file_mygraderlist_backend_like_like_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *Like) GetId() string {
@@ -95,7 +95,7 @@ type FindByUserIdLikeRequest struct {
 func (x *FindByUserIdLikeRequest) Reset() {
 	*x = FindByUserIdLikeRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_MyGraderList_backend_like_like_proto_msgTypes[1]
+		mi := &file_mygraderlist_backend_like_like_proto_msgTypes[1]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -108,7 +108,7 @@ func (x *FindByUserIdLikeRequest) String() string {
 func (*FindByUserIdLikeRequest) ProtoMessage() {}
 
 func (x *FindByUserIdLikeRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_MyGraderList_backend_like_like_proto_msgTypes[1]
+	mi := &file_mygraderlist_backend_like_like_proto_msgTypes[1]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -121,7 +121,7 @@ func (x *FindByUserIdLikeRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use FindByUserIdLikeRequest.ProtoReflect.Descriptor instead.
 func (*FindByUserIdLikeRequest) Descriptor() ([]byte, []int) {
-	return file_MyGraderList_backend_like_like_proto_rawDescGZIP(), []int{1}
+	return file_mygraderlist_backend_like_like_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *FindByUserIdLikeRequest) GetUserId() string {
@@ -142,7 +142,7 @@ type FindByUserIdLikeResponse struct {
 func (x *FindByUserIdLikeResponse) Reset() {
 	*x = FindByUserIdLikeResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_MyGraderList_backend_like_like_proto_msgTypes[2]
+		mi := &file_mygraderlist_backend_like_like_proto_msgTypes[2]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -155,7 +155,7 @@ func (x *FindByUserIdLikeResponse) String() string {
 func (*FindByUserIdLikeResponse) ProtoMessage() {}
 
 func (x *FindByUserIdLikeResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_MyGraderList_backend_like_like_proto_msgTypes[2]
+	mi := &file_mygraderlist_backend_like_like_proto_msgTypes[2]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -168,7 +168,7 @@ func (x *FindByUserIdLikeResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use FindByUserIdLikeResponse.ProtoReflect.Descriptor instead.
 func (*FindByUserIdLikeResponse) Descriptor() ([]byte, []int) {
-	return file_MyGraderList_backend_like_like_proto_rawDescGZIP(), []int{2}
+	return file_mygraderlist_backend_like_like_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *FindByUserIdLikeResponse) GetLikes() []*Like {
@@ -190,7 +190,7 @@ type CreateLikeRequest struct {
 func (x *CreateLikeRequest) Reset() {
 	*x = CreateLikeRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_MyGraderList_backend_like_like_proto_msgTypes[3]
+		mi := &file_mygraderlist_backend_like_like_proto_msgTypes[3]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -203,7 +203,7 @@ func (x *CreateLikeRequest) String() string {
 func (*CreateLikeRequest) ProtoMessage() {}
 
 func (x *CreateLikeRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_MyGraderList_backend_like_like_proto_msgTypes[3]
+	mi := &file_mygraderlist_backend_like_like_proto_msgTypes[3]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -216,7 +216,7 @@ func (x *CreateLikeRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CreateLikeRequest.ProtoReflect.Descriptor instead.
 func (*CreateLikeRequest) Descriptor() ([]byte, []int) {
-	return file_MyGraderList_backend_like_like_proto_rawDescGZIP(), []int{3}
+	return file_mygraderlist_backend_like_like_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *CreateLikeRequest) GetLike() *Like {
@@ -237,7 +237,7 @@ type CreateLikeResponse struct {
 func (x *CreateLikeResponse) Reset() {
 	*x = CreateLikeResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_MyGraderList_backend_like_like_proto_msgTypes[4]
+		mi := &file_mygraderlist_backend_like_like_proto_msgTypes[4]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -250,7 +250,7 @@ func (x *CreateLikeResponse) String() string {
 func (*CreateLikeResponse) ProtoMessage() {}
 
 func (x *CreateLikeResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_MyGraderList_backend_like_like_proto_msgTypes[4]
+	mi := &file_mygraderlist_backend_like_like_proto_msgTypes[4]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -263,7 +263,7 @@ func (x *CreateLikeResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CreateLikeResponse.ProtoReflect.Descriptor instead.
 func (*CreateLikeResponse) Descriptor() ([]byte, []int) {
-	return file_MyGraderList_backend_like_like_proto_rawDescGZIP(), []int{4}
+	return file_mygraderlist_backend_like_like_proto_rawDescGZIP(), []int{4}
 }
 
 func (x *CreateLikeResponse) GetLike() *Like {
@@ -286,7 +286,7 @@ type UpdateLikeRequest struct {
 func (x *UpdateLikeRequest) Reset() {
 	*x = UpdateLikeRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_MyGraderList_backend_like_like_proto_msgTypes[5]
+		mi := &file_mygraderlist_backend_like_like_proto_msgTypes[5]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -299,7 +299,7 @@ func (x *UpdateLikeRequest) String() string {
 func (*UpdateLikeRequest) ProtoMessage() {}
 
 func (x *UpdateLikeRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_MyGraderList_backend_like_like_proto_msgTypes[5]
+	mi := &file_mygraderlist_backend_like_like_proto_msgTypes[5]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -312,7 +312,7 @@ func (x *UpdateLikeRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UpdateLikeRequest.ProtoReflect.Descriptor instead.
 func (*UpdateLikeRequest) Descriptor() ([]byte, []int) {
-	return file_MyGraderList_backend_like_like_proto_rawDescGZIP(), []int{5}
+	return file_mygraderlist_backend_like_like_proto_rawDescGZIP(), []int{5}
 }
 
 func (x *UpdateLikeRequest) GetProblemId() string {
@@ -340,7 +340,7 @@ type UpdateLikeResponse struct {
 func (x *UpdateLikeResponse) Reset() {
 	*x = UpdateLikeResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_MyGraderList_backend_like_like_proto_msgTypes[6]
+		mi := &file_mygraderlist_backend_like_like_proto_msgTypes[6]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -353,7 +353,7 @@ func (x *UpdateLikeResponse) String() string {
 func (*UpdateLikeResponse) ProtoMessage() {}
 
 func (x *UpdateLikeResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_MyGraderList_backend_like_like_proto_msgTypes[6]
+	mi := &file_mygraderlist_backend_like_like_proto_msgTypes[6]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -366,7 +366,7 @@ func (x *UpdateLikeResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UpdateLikeResponse.ProtoReflect.Descriptor instead.
 func (*UpdateLikeResponse) Descriptor() ([]byte, []int) {
-	return file_MyGraderList_backend_like_like_proto_rawDescGZIP(), []int{6}
+	return file_mygraderlist_backend_like_like_proto_rawDescGZIP(), []int{6}
 }
 
 func (x *UpdateLikeResponse) GetLike() *Like {
@@ -388,7 +388,7 @@ type DeleteLikeRequest struct {
 func (x *DeleteLikeRequest) Reset() {
 	*x = DeleteLikeRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_MyGraderList_backend_like_like_proto_msgTypes[7]
+		mi := &file_mygraderlist_backend_like_like_proto_msgTypes[7]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -401,7 +401,7 @@ func (x *DeleteLikeRequest) String() string {
 func (*DeleteLikeRequest) ProtoMessage() {}
 
 func (x *DeleteLikeRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_MyGraderList_backend_like_like_proto_msgTypes[7]
+	mi := &file_mygraderlist_backend_like_like_proto_msgTypes[7]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -414,7 +414,7 @@ func (x *DeleteLikeRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DeleteLikeRequest.ProtoReflect.Descriptor instead.
 func (*DeleteLikeRequest) Descriptor() ([]byte, []int) {
-	return file_MyGraderList_backend_like_like_proto_rawDescGZIP(), []int{7}
+	return file_mygraderlist_backend_like_like_proto_rawDescGZIP(), []int{7}
 }
 
 func (x *DeleteLikeRequest) GetId() string {
@@ -435,7 +435,7 @@ type DeleteLikeResponse struct {
 func (x *DeleteLikeResponse) Reset() {
 	*x = DeleteLikeResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_MyGraderList_backend_like_like_proto_msgTypes[8]
+		mi := &file_mygraderlist_backend_like_like_proto_msgTypes[8]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -448,7 +448,7 @@ func (x *DeleteLikeResponse) String() string {
 func (*DeleteLikeResponse) ProtoMessage() {}
 
 func (x *DeleteLikeResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_MyGraderList_backend_like_like_proto_msgTypes[8]
+	mi := &file_mygraderlist_backend_like_like_proto_msgTypes[8]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -461,7 +461,7 @@ func (x *DeleteLikeResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DeleteLikeResponse.ProtoReflect.Descriptor instead.
 func (*DeleteLikeResponse) Descriptor() ([]byte, []int) {
-	return file_MyGraderList_backend_like_like_proto_rawDescGZIP(), []int{8}
+	return file_mygraderlist_backend_like_like_proto_rawDescGZIP(), []int{8}
 }
 
 func (x *DeleteLikeResponse) GetSuccess() bool {
@@ -471,10 +471,10 @@ func (x *DeleteLikeResponse) GetSuccess() bool {
 	return false
 }
 
-var File_MyGraderList_backend_like_like_proto protoreflect.FileDescriptor
+var File_mygraderlist_backend_like_like_proto protoreflect.FileDescriptor
 
-var file_MyGraderList_backend_like_like_proto_rawDesc = []byte{
-	0x0a, 0x24, 0x4d, 0x79, 0x47, 0x72, 0x61, 0x64, 0x65, 0x72, 0x4c, 0x69, 0x73, 0x74, 0x2f, 0x62,
+var file_mygraderlist_backend_like_like_proto_rawDesc = []byte{
+	0x0a, 0x24, 0x6d, 0x79, 0x67, 0x72, 0x61, 0x64, 0x65, 0x72, 0x6c, 0x69, 0x73, 0x74, 0x2f, 0x62,
 	0x61, 0x63, 0x6b, 0x65, 0x6e, 0x64, 0x2f, 0x6c, 0x69, 0x6b, 0x65, 0x2f, 0x6c, 0x69, 0x6b, 0x65,
 	0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12, 0x04, 0x6c, 0x69, 0x6b, 0x65, 0x22, 0x4c, 0x0a, 0x04,
 	0x4c, 0x69, 0x6b, 0x65, 0x12, 0x0e, 0x0a, 0x02, 0x69, 0x64, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09,
@@ -528,19 +528,19 @@ var file_MyGraderList_backend_like_like_proto_rawDesc = []byte{
 }
 
 var (
-	file_MyGraderList_backend_like_like_proto_rawDescOnce sync.Once
-	file_MyGraderList_backend_like_like_proto_rawDescData = file_MyGraderList_backend_like_like_proto_rawDesc
+	file_mygraderlist_backend_like_like_proto_rawDescOnce sync.Once
+	file_mygraderlist_backend_like_like_proto_rawDescData = file_mygraderlist_backend_like_like_proto_rawDesc
 )
 
-func file_MyGraderList_backend_like_like_proto_rawDescGZIP() []byte {
-	file_MyGraderList_backend_like_like_proto_rawDescOnce.Do(func() {
-		file_MyGraderList_backend_like_like_proto_rawDescData = protoimpl.X.CompressGZIP(file_MyGraderList_backend_like_like_proto_rawDescData)
+func file_mygraderlist_backend_like_like_proto_rawDescGZIP() []byte {
+	file_mygraderlist_backend_like_like_proto_rawDescOnce.Do(func() {
+		file_mygraderlist_backend_like_like_proto_rawDescData = protoimpl.X.CompressGZIP(file_mygraderlist_backend_like_like_proto_rawDescData)
 	})
-	return file_MyGraderList_backend_like_like_proto_rawDescData
+	return file_mygraderlist_backend_like_like_proto_rawDescData
 }
 
-var file_MyGraderList_backend_like_like_proto_msgTypes = make([]protoimpl.MessageInfo, 9)
-var file_MyGraderList_backend_like_like_proto_goTypes = []interface{}{
+var file_mygraderlist_backend_like_like_proto_msgTypes = make([]protoimpl.MessageInfo, 9)
+var file_mygraderlist_backend_like_like_proto_goTypes = []interface{}{
 	(*Like)(nil),                     // 0: like.Like
 	(*FindByUserIdLikeRequest)(nil),  // 1: like.FindByUserIdLikeRequest
 	(*FindByUserIdLikeResponse)(nil), // 2: like.FindByUserIdLikeResponse
@@ -551,7 +551,7 @@ var file_MyGraderList_backend_like_like_proto_goTypes = []interface{}{
 	(*DeleteLikeRequest)(nil),        // 7: like.DeleteLikeRequest
 	(*DeleteLikeResponse)(nil),       // 8: like.DeleteLikeResponse
 }
-var file_MyGraderList_backend_like_like_proto_depIdxs = []int32{
+var file_mygraderlist_backend_like_like_proto_depIdxs = []int32{
 	0, // 0: like.FindByUserIdLikeResponse.likes:type_name -> like.Like
 	0, // 1: like.CreateLikeRequest.like:type_name -> like.Like
 	0, // 2: like.CreateLikeResponse.like:type_name -> like.Like
@@ -569,13 +569,13 @@ var file_MyGraderList_backend_like_like_proto_depIdxs = []int32{
 	0, // [0:4] is the sub-list for field type_name
 }
 
-func init() { file_MyGraderList_backend_like_like_proto_init() }
-func file_MyGraderList_backend_like_like_proto_init() {
-	if File_MyGraderList_backend_like_like_proto != nil {
+func init() { file_mygraderlist_backend_like_like_proto_init() }
+func file_mygraderlist_backend_like_like_proto_init() {
+	if File_mygraderlist_backend_like_like_proto != nil {
 		return
 	}
 	if !protoimpl.UnsafeEnabled {
-		file_MyGraderList_backend_like_like_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_mygraderlist_backend_like_like_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Like); i {
 			case 0:
 				return &v.state
@@ -587,7 +587,7 @@ func file_MyGraderList_backend_like_like_proto_init() {
 				return nil
 			}
 		}
-		file_MyGraderList_backend_like_like_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_mygraderlist_backend_like_like_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*FindByUserIdLikeRequest); i {
 			case 0:
 				return &v.state
@@ -599,7 +599,7 @@ func file_MyGraderList_backend_like_like_proto_init() {
 				return nil
 			}
 		}
-		file_MyGraderList_backend_like_like_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_mygraderlist_backend_like_like_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*FindByUserIdLikeResponse); i {
 			case 0:
 				return &v.state
@@ -611,7 +611,7 @@ func file_MyGraderList_backend_like_like_proto_init() {
 				return nil
 			}
 		}
-		file_MyGraderList_backend_like_like_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_mygraderlist_backend_like_like_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*CreateLikeRequest); i {
 			case 0:
 				return &v.state
@@ -623,7 +623,7 @@ func file_MyGraderList_backend_like_like_proto_init() {
 				return nil
 			}
 		}
-		file_MyGraderList_backend_like_like_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_mygraderlist_backend_like_like_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*CreateLikeResponse); i {
 			case 0:
 				return &v.state
@@ -635,7 +635,7 @@ func file_MyGraderList_backend_like_like_proto_init() {
 				return nil
 			}
 		}
-		file_MyGraderList_backend_like_like_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_mygraderlist_backend_like_like_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*UpdateLikeRequest); i {
 			case 0:
 				return &v.state
@@ -647,7 +647,7 @@ func file_MyGraderList_backend_like_like_proto_init() {
 				return nil
 			}
 		}
-		file_MyGraderList_backend_like_like_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+		file_mygraderlist_backend_like_like_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*UpdateLikeResponse); i {
 			case 0:
 				return &v.state
@@ -659,7 +659,7 @@ func file_MyGraderList_backend_like_like_proto_init() {
 				return nil
 			}
 		}
-		file_MyGraderList_backend_like_like_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
+		file_mygraderlist_backend_like_like_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*DeleteLikeRequest); i {
 			case 0:
 				return &v.state
@@ -671,7 +671,7 @@ func file_MyGraderList_backend_like_like_proto_init() {
 				return nil
 			}
 		}
-		file_MyGraderList_backend_like_like_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
+		file_mygraderlist_backend_like_like_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*DeleteLikeResponse); i {
 			case 0:
 				return &v.state
@@ -688,18 +688,18 @@ func file_MyGraderList_backend_like_like_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_MyGraderList_backend_like_like_proto_rawDesc,
+			RawDescriptor: file_mygraderlist_backend_like_like_proto_rawDesc,
 			NumEnums:      0,
 			NumMessages:   9,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_MyGraderList_backend_like_like_proto_goTypes,
-		DependencyIndexes: file_MyGraderList_backend_like_like_proto_depIdxs,
-		MessageInfos:      file_MyGraderList_backend_like_like_proto_msgTypes,
+		GoTypes:           file_mygraderlist_backend_like_like_proto_goTypes,
+		DependencyIndexes: file_mygraderlist_backend_like_like_proto_depIdxs,
+		MessageInfos:      file_mygraderlist_backend_like_like_proto_msgTypes,
 	}.Build()
-	File_MyGraderList_backend_like_like_proto = out.File
-	file_MyGraderList_backend_like_like_proto_rawDesc = nil
-	file_MyGraderList_backend_like_like_proto_goTypes = nil
-	file_MyGraderList_backend_like_like_proto_depIdxs = nil
+	File_mygraderlist_backend_like_like_proto = out.File
+	file_mygraderlist_backend_like_like_proto_rawDesc = nil
+	file_mygraderlist_backend_like_like_proto_goTypes = nil
+	file_mygraderlist_backend_like_like_proto_depIdxs = nil
 }

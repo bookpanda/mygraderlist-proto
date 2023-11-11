@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.3.0
 // - protoc             v4.24.4
-// source: MyGraderList/backend/emoji/emoji.proto
+// source: mygraderlist/backend/emoji/emoji.proto
 
 package emoji
 
@@ -216,5 +216,5 @@ var EmojiService_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "MyGraderList/backend/emoji/emoji.proto",
+	Metadata: "mygraderlist/backend/emoji/emoji.proto",
 }

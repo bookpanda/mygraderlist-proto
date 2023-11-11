@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.26.0
 // 	protoc        v4.24.4
-// source: MyGraderList/backend/rating/rating.proto
+// source: mygraderlist/backend/rating/rating.proto
 
 package rating
 
@@ -35,7 +35,7 @@ type Rating struct {
 func (x *Rating) Reset() {
 	*x = Rating{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_MyGraderList_backend_rating_rating_proto_msgTypes[0]
+		mi := &file_mygraderlist_backend_rating_rating_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -48,7 +48,7 @@ func (x *Rating) String() string {
 func (*Rating) ProtoMessage() {}
 
 func (x *Rating) ProtoReflect() protoreflect.Message {
-	mi := &file_MyGraderList_backend_rating_rating_proto_msgTypes[0]
+	mi := &file_mygraderlist_backend_rating_rating_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -61,7 +61,7 @@ func (x *Rating) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Rating.ProtoReflect.Descriptor instead.
 func (*Rating) Descriptor() ([]byte, []int) {
-	return file_MyGraderList_backend_rating_rating_proto_rawDescGZIP(), []int{0}
+	return file_mygraderlist_backend_rating_rating_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *Rating) GetId() string {
@@ -109,7 +109,7 @@ type FindAllRatingRequest struct {
 func (x *FindAllRatingRequest) Reset() {
 	*x = FindAllRatingRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_MyGraderList_backend_rating_rating_proto_msgTypes[1]
+		mi := &file_mygraderlist_backend_rating_rating_proto_msgTypes[1]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -122,7 +122,7 @@ func (x *FindAllRatingRequest) String() string {
 func (*FindAllRatingRequest) ProtoMessage() {}
 
 func (x *FindAllRatingRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_MyGraderList_backend_rating_rating_proto_msgTypes[1]
+	mi := &file_mygraderlist_backend_rating_rating_proto_msgTypes[1]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -135,7 +135,7 @@ func (x *FindAllRatingRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use FindAllRatingRequest.ProtoReflect.Descriptor instead.
 func (*FindAllRatingRequest) Descriptor() ([]byte, []int) {
-	return file_MyGraderList_backend_rating_rating_proto_rawDescGZIP(), []int{1}
+	return file_mygraderlist_backend_rating_rating_proto_rawDescGZIP(), []int{1}
 }
 
 type FindAllRatingResponse struct {
@@ -149,7 +149,7 @@ type FindAllRatingResponse struct {
 func (x *FindAllRatingResponse) Reset() {
 	*x = FindAllRatingResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_MyGraderList_backend_rating_rating_proto_msgTypes[2]
+		mi := &file_mygraderlist_backend_rating_rating_proto_msgTypes[2]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -162,7 +162,7 @@ func (x *FindAllRatingResponse) String() string {
 func (*FindAllRatingResponse) ProtoMessage() {}
 
 func (x *FindAllRatingResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_MyGraderList_backend_rating_rating_proto_msgTypes[2]
+	mi := &file_mygraderlist_backend_rating_rating_proto_msgTypes[2]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -175,7 +175,7 @@ func (x *FindAllRatingResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use FindAllRatingResponse.ProtoReflect.Descriptor instead.
 func (*FindAllRatingResponse) Descriptor() ([]byte, []int) {
-	return file_MyGraderList_backend_rating_rating_proto_rawDescGZIP(), []int{2}
+	return file_mygraderlist_backend_rating_rating_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *FindAllRatingResponse) GetRatings() []*Rating {
@@ -197,7 +197,7 @@ type FindByUserIdRatingRequest struct {
 func (x *FindByUserIdRatingRequest) Reset() {
 	*x = FindByUserIdRatingRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_MyGraderList_backend_rating_rating_proto_msgTypes[3]
+		mi := &file_mygraderlist_backend_rating_rating_proto_msgTypes[3]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -210,7 +210,7 @@ func (x *FindByUserIdRatingRequest) String() string {
 func (*FindByUserIdRatingRequest) ProtoMessage() {}
 
 func (x *FindByUserIdRatingRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_MyGraderList_backend_rating_rating_proto_msgTypes[3]
+	mi := &file_mygraderlist_backend_rating_rating_proto_msgTypes[3]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -223,7 +223,7 @@ func (x *FindByUserIdRatingRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use FindByUserIdRatingRequest.ProtoReflect.Descriptor instead.
 func (*FindByUserIdRatingRequest) Descriptor() ([]byte, []int) {
-	return file_MyGraderList_backend_rating_rating_proto_rawDescGZIP(), []int{3}
+	return file_mygraderlist_backend_rating_rating_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *FindByUserIdRatingRequest) GetUserId() string {
@@ -244,7 +244,7 @@ type FindByUserIdRatingResponse struct {
 func (x *FindByUserIdRatingResponse) Reset() {
 	*x = FindByUserIdRatingResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_MyGraderList_backend_rating_rating_proto_msgTypes[4]
+		mi := &file_mygraderlist_backend_rating_rating_proto_msgTypes[4]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -257,7 +257,7 @@ func (x *FindByUserIdRatingResponse) String() string {
 func (*FindByUserIdRatingResponse) ProtoMessage() {}
 
 func (x *FindByUserIdRatingResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_MyGraderList_backend_rating_rating_proto_msgTypes[4]
+	mi := &file_mygraderlist_backend_rating_rating_proto_msgTypes[4]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -270,7 +270,7 @@ func (x *FindByUserIdRatingResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use FindByUserIdRatingResponse.ProtoReflect.Descriptor instead.
 func (*FindByUserIdRatingResponse) Descriptor() ([]byte, []int) {
-	return file_MyGraderList_backend_rating_rating_proto_rawDescGZIP(), []int{4}
+	return file_mygraderlist_backend_rating_rating_proto_rawDescGZIP(), []int{4}
 }
 
 func (x *FindByUserIdRatingResponse) GetRatings() []*Rating {
@@ -292,7 +292,7 @@ type CreateRatingRequest struct {
 func (x *CreateRatingRequest) Reset() {
 	*x = CreateRatingRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_MyGraderList_backend_rating_rating_proto_msgTypes[5]
+		mi := &file_mygraderlist_backend_rating_rating_proto_msgTypes[5]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -305,7 +305,7 @@ func (x *CreateRatingRequest) String() string {
 func (*CreateRatingRequest) ProtoMessage() {}
 
 func (x *CreateRatingRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_MyGraderList_backend_rating_rating_proto_msgTypes[5]
+	mi := &file_mygraderlist_backend_rating_rating_proto_msgTypes[5]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -318,7 +318,7 @@ func (x *CreateRatingRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CreateRatingRequest.ProtoReflect.Descriptor instead.
 func (*CreateRatingRequest) Descriptor() ([]byte, []int) {
-	return file_MyGraderList_backend_rating_rating_proto_rawDescGZIP(), []int{5}
+	return file_mygraderlist_backend_rating_rating_proto_rawDescGZIP(), []int{5}
 }
 
 func (x *CreateRatingRequest) GetRating() *Rating {
@@ -339,7 +339,7 @@ type CreateRatingResponse struct {
 func (x *CreateRatingResponse) Reset() {
 	*x = CreateRatingResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_MyGraderList_backend_rating_rating_proto_msgTypes[6]
+		mi := &file_mygraderlist_backend_rating_rating_proto_msgTypes[6]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -352,7 +352,7 @@ func (x *CreateRatingResponse) String() string {
 func (*CreateRatingResponse) ProtoMessage() {}
 
 func (x *CreateRatingResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_MyGraderList_backend_rating_rating_proto_msgTypes[6]
+	mi := &file_mygraderlist_backend_rating_rating_proto_msgTypes[6]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -365,7 +365,7 @@ func (x *CreateRatingResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CreateRatingResponse.ProtoReflect.Descriptor instead.
 func (*CreateRatingResponse) Descriptor() ([]byte, []int) {
-	return file_MyGraderList_backend_rating_rating_proto_rawDescGZIP(), []int{6}
+	return file_mygraderlist_backend_rating_rating_proto_rawDescGZIP(), []int{6}
 }
 
 func (x *CreateRatingResponse) GetRating() *Rating {
@@ -381,14 +381,15 @@ type UpdateRatingRequest struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Score      string `protobuf:"bytes,1,opt,name=score,proto3" json:"score,omitempty"`
-	Difficulty string `protobuf:"bytes,2,opt,name=difficulty,proto3" json:"difficulty,omitempty"`
+	Id         string `protobuf:"bytes,1,opt,name=id,proto3" json:"id,omitempty"`
+	Score      string `protobuf:"bytes,2,opt,name=score,proto3" json:"score,omitempty"`
+	Difficulty string `protobuf:"bytes,3,opt,name=difficulty,proto3" json:"difficulty,omitempty"`
 }
 
 func (x *UpdateRatingRequest) Reset() {
 	*x = UpdateRatingRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_MyGraderList_backend_rating_rating_proto_msgTypes[7]
+		mi := &file_mygraderlist_backend_rating_rating_proto_msgTypes[7]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -401,7 +402,7 @@ func (x *UpdateRatingRequest) String() string {
 func (*UpdateRatingRequest) ProtoMessage() {}
 
 func (x *UpdateRatingRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_MyGraderList_backend_rating_rating_proto_msgTypes[7]
+	mi := &file_mygraderlist_backend_rating_rating_proto_msgTypes[7]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -414,7 +415,14 @@ func (x *UpdateRatingRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UpdateRatingRequest.ProtoReflect.Descriptor instead.
 func (*UpdateRatingRequest) Descriptor() ([]byte, []int) {
-	return file_MyGraderList_backend_rating_rating_proto_rawDescGZIP(), []int{7}
+	return file_mygraderlist_backend_rating_rating_proto_rawDescGZIP(), []int{7}
+}
+
+func (x *UpdateRatingRequest) GetId() string {
+	if x != nil {
+		return x.Id
+	}
+	return ""
 }
 
 func (x *UpdateRatingRequest) GetScore() string {
@@ -442,7 +450,7 @@ type UpdateRatingResponse struct {
 func (x *UpdateRatingResponse) Reset() {
 	*x = UpdateRatingResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_MyGraderList_backend_rating_rating_proto_msgTypes[8]
+		mi := &file_mygraderlist_backend_rating_rating_proto_msgTypes[8]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -455,7 +463,7 @@ func (x *UpdateRatingResponse) String() string {
 func (*UpdateRatingResponse) ProtoMessage() {}
 
 func (x *UpdateRatingResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_MyGraderList_backend_rating_rating_proto_msgTypes[8]
+	mi := &file_mygraderlist_backend_rating_rating_proto_msgTypes[8]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -468,7 +476,7 @@ func (x *UpdateRatingResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UpdateRatingResponse.ProtoReflect.Descriptor instead.
 func (*UpdateRatingResponse) Descriptor() ([]byte, []int) {
-	return file_MyGraderList_backend_rating_rating_proto_rawDescGZIP(), []int{8}
+	return file_mygraderlist_backend_rating_rating_proto_rawDescGZIP(), []int{8}
 }
 
 func (x *UpdateRatingResponse) GetRating() *Rating {
@@ -490,7 +498,7 @@ type DeleteRatingRequest struct {
 func (x *DeleteRatingRequest) Reset() {
 	*x = DeleteRatingRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_MyGraderList_backend_rating_rating_proto_msgTypes[9]
+		mi := &file_mygraderlist_backend_rating_rating_proto_msgTypes[9]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -503,7 +511,7 @@ func (x *DeleteRatingRequest) String() string {
 func (*DeleteRatingRequest) ProtoMessage() {}
 
 func (x *DeleteRatingRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_MyGraderList_backend_rating_rating_proto_msgTypes[9]
+	mi := &file_mygraderlist_backend_rating_rating_proto_msgTypes[9]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -516,7 +524,7 @@ func (x *DeleteRatingRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DeleteRatingRequest.ProtoReflect.Descriptor instead.
 func (*DeleteRatingRequest) Descriptor() ([]byte, []int) {
-	return file_MyGraderList_backend_rating_rating_proto_rawDescGZIP(), []int{9}
+	return file_mygraderlist_backend_rating_rating_proto_rawDescGZIP(), []int{9}
 }
 
 func (x *DeleteRatingRequest) GetId() string {
@@ -537,7 +545,7 @@ type DeleteRatingResponse struct {
 func (x *DeleteRatingResponse) Reset() {
 	*x = DeleteRatingResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_MyGraderList_backend_rating_rating_proto_msgTypes[10]
+		mi := &file_mygraderlist_backend_rating_rating_proto_msgTypes[10]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -550,7 +558,7 @@ func (x *DeleteRatingResponse) String() string {
 func (*DeleteRatingResponse) ProtoMessage() {}
 
 func (x *DeleteRatingResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_MyGraderList_backend_rating_rating_proto_msgTypes[10]
+	mi := &file_mygraderlist_backend_rating_rating_proto_msgTypes[10]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -563,7 +571,7 @@ func (x *DeleteRatingResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DeleteRatingResponse.ProtoReflect.Descriptor instead.
 func (*DeleteRatingResponse) Descriptor() ([]byte, []int) {
-	return file_MyGraderList_backend_rating_rating_proto_rawDescGZIP(), []int{10}
+	return file_mygraderlist_backend_rating_rating_proto_rawDescGZIP(), []int{10}
 }
 
 func (x *DeleteRatingResponse) GetSuccess() bool {
@@ -573,10 +581,10 @@ func (x *DeleteRatingResponse) GetSuccess() bool {
 	return false
 }
 
-var File_MyGraderList_backend_rating_rating_proto protoreflect.FileDescriptor
+var File_mygraderlist_backend_rating_rating_proto protoreflect.FileDescriptor
 
-var file_MyGraderList_backend_rating_rating_proto_rawDesc = []byte{
-	0x0a, 0x28, 0x4d, 0x79, 0x47, 0x72, 0x61, 0x64, 0x65, 0x72, 0x4c, 0x69, 0x73, 0x74, 0x2f, 0x62,
+var file_mygraderlist_backend_rating_rating_proto_rawDesc = []byte{
+	0x0a, 0x28, 0x6d, 0x79, 0x67, 0x72, 0x61, 0x64, 0x65, 0x72, 0x6c, 0x69, 0x73, 0x74, 0x2f, 0x62,
 	0x61, 0x63, 0x6b, 0x65, 0x6e, 0x64, 0x2f, 0x72, 0x61, 0x74, 0x69, 0x6e, 0x67, 0x2f, 0x72, 0x61,
 	0x74, 0x69, 0x6e, 0x67, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12, 0x06, 0x72, 0x61, 0x74, 0x69,
 	0x6e, 0x67, 0x22, 0x84, 0x01, 0x0a, 0x06, 0x52, 0x61, 0x74, 0x69, 0x6e, 0x67, 0x12, 0x0e, 0x0a,
@@ -609,10 +617,11 @@ var file_MyGraderList_backend_rating_rating_proto_rawDesc = []byte{
 	0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x12, 0x26, 0x0a, 0x06, 0x72, 0x61, 0x74, 0x69,
 	0x6e, 0x67, 0x18, 0x01, 0x20, 0x01, 0x28, 0x0b, 0x32, 0x0e, 0x2e, 0x72, 0x61, 0x74, 0x69, 0x6e,
 	0x67, 0x2e, 0x52, 0x61, 0x74, 0x69, 0x6e, 0x67, 0x52, 0x06, 0x72, 0x61, 0x74, 0x69, 0x6e, 0x67,
-	0x22, 0x4b, 0x0a, 0x13, 0x55, 0x70, 0x64, 0x61, 0x74, 0x65, 0x52, 0x61, 0x74, 0x69, 0x6e, 0x67,
-	0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x12, 0x14, 0x0a, 0x05, 0x73, 0x63, 0x6f, 0x72, 0x65,
-	0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52, 0x05, 0x73, 0x63, 0x6f, 0x72, 0x65, 0x12, 0x1e, 0x0a,
-	0x0a, 0x64, 0x69, 0x66, 0x66, 0x69, 0x63, 0x75, 0x6c, 0x74, 0x79, 0x18, 0x02, 0x20, 0x01, 0x28,
+	0x22, 0x5b, 0x0a, 0x13, 0x55, 0x70, 0x64, 0x61, 0x74, 0x65, 0x52, 0x61, 0x74, 0x69, 0x6e, 0x67,
+	0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x12, 0x0e, 0x0a, 0x02, 0x69, 0x64, 0x18, 0x01, 0x20,
+	0x01, 0x28, 0x09, 0x52, 0x02, 0x69, 0x64, 0x12, 0x14, 0x0a, 0x05, 0x73, 0x63, 0x6f, 0x72, 0x65,
+	0x18, 0x02, 0x20, 0x01, 0x28, 0x09, 0x52, 0x05, 0x73, 0x63, 0x6f, 0x72, 0x65, 0x12, 0x1e, 0x0a,
+	0x0a, 0x64, 0x69, 0x66, 0x66, 0x69, 0x63, 0x75, 0x6c, 0x74, 0x79, 0x18, 0x03, 0x20, 0x01, 0x28,
 	0x09, 0x52, 0x0a, 0x64, 0x69, 0x66, 0x66, 0x69, 0x63, 0x75, 0x6c, 0x74, 0x79, 0x22, 0x3e, 0x0a,
 	0x14, 0x55, 0x70, 0x64, 0x61, 0x74, 0x65, 0x52, 0x61, 0x74, 0x69, 0x6e, 0x67, 0x52, 0x65, 0x73,
 	0x70, 0x6f, 0x6e, 0x73, 0x65, 0x12, 0x26, 0x0a, 0x06, 0x72, 0x61, 0x74, 0x69, 0x6e, 0x67, 0x18,
@@ -654,19 +663,19 @@ var file_MyGraderList_backend_rating_rating_proto_rawDesc = []byte{
 }
 
 var (
-	file_MyGraderList_backend_rating_rating_proto_rawDescOnce sync.Once
-	file_MyGraderList_backend_rating_rating_proto_rawDescData = file_MyGraderList_backend_rating_rating_proto_rawDesc
+	file_mygraderlist_backend_rating_rating_proto_rawDescOnce sync.Once
+	file_mygraderlist_backend_rating_rating_proto_rawDescData = file_mygraderlist_backend_rating_rating_proto_rawDesc
 )
 
-func file_MyGraderList_backend_rating_rating_proto_rawDescGZIP() []byte {
-	file_MyGraderList_backend_rating_rating_proto_rawDescOnce.Do(func() {
-		file_MyGraderList_backend_rating_rating_proto_rawDescData = protoimpl.X.CompressGZIP(file_MyGraderList_backend_rating_rating_proto_rawDescData)
+func file_mygraderlist_backend_rating_rating_proto_rawDescGZIP() []byte {
+	file_mygraderlist_backend_rating_rating_proto_rawDescOnce.Do(func() {
+		file_mygraderlist_backend_rating_rating_proto_rawDescData = protoimpl.X.CompressGZIP(file_mygraderlist_backend_rating_rating_proto_rawDescData)
 	})
-	return file_MyGraderList_backend_rating_rating_proto_rawDescData
+	return file_mygraderlist_backend_rating_rating_proto_rawDescData
 }
 
-var file_MyGraderList_backend_rating_rating_proto_msgTypes = make([]protoimpl.MessageInfo, 11)
-var file_MyGraderList_backend_rating_rating_proto_goTypes = []interface{}{
+var file_mygraderlist_backend_rating_rating_proto_msgTypes = make([]protoimpl.MessageInfo, 11)
+var file_mygraderlist_backend_rating_rating_proto_goTypes = []interface{}{
 	(*Rating)(nil),                     // 0: rating.Rating
 	(*FindAllRatingRequest)(nil),       // 1: rating.FindAllRatingRequest
 	(*FindAllRatingResponse)(nil),      // 2: rating.FindAllRatingResponse
@@ -679,7 +688,7 @@ var file_MyGraderList_backend_rating_rating_proto_goTypes = []interface{}{
 	(*DeleteRatingRequest)(nil),        // 9: rating.DeleteRatingRequest
 	(*DeleteRatingResponse)(nil),       // 10: rating.DeleteRatingResponse
 }
-var file_MyGraderList_backend_rating_rating_proto_depIdxs = []int32{
+var file_mygraderlist_backend_rating_rating_proto_depIdxs = []int32{
 	0,  // 0: rating.FindAllRatingResponse.ratings:type_name -> rating.Rating
 	0,  // 1: rating.FindByUserIdRatingResponse.ratings:type_name -> rating.Rating
 	0,  // 2: rating.CreateRatingRequest.rating:type_name -> rating.Rating
@@ -702,13 +711,13 @@ var file_MyGraderList_backend_rating_rating_proto_depIdxs = []int32{
 	0,  // [0:5] is the sub-list for field type_name
 }
 
-func init() { file_MyGraderList_backend_rating_rating_proto_init() }
-func file_MyGraderList_backend_rating_rating_proto_init() {
-	if File_MyGraderList_backend_rating_rating_proto != nil {
+func init() { file_mygraderlist_backend_rating_rating_proto_init() }
+func file_mygraderlist_backend_rating_rating_proto_init() {
+	if File_mygraderlist_backend_rating_rating_proto != nil {
 		return
 	}
 	if !protoimpl.UnsafeEnabled {
-		file_MyGraderList_backend_rating_rating_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_mygraderlist_backend_rating_rating_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Rating); i {
 			case 0:
 				return &v.state
@@ -720,7 +729,7 @@ func file_MyGraderList_backend_rating_rating_proto_init() {
 				return nil
 			}
 		}
-		file_MyGraderList_backend_rating_rating_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_mygraderlist_backend_rating_rating_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*FindAllRatingRequest); i {
 			case 0:
 				return &v.state
@@ -732,7 +741,7 @@ func file_MyGraderList_backend_rating_rating_proto_init() {
 				return nil
 			}
 		}
-		file_MyGraderList_backend_rating_rating_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_mygraderlist_backend_rating_rating_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*FindAllRatingResponse); i {
 			case 0:
 				return &v.state
@@ -744,7 +753,7 @@ func file_MyGraderList_backend_rating_rating_proto_init() {
 				return nil
 			}
 		}
-		file_MyGraderList_backend_rating_rating_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_mygraderlist_backend_rating_rating_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*FindByUserIdRatingRequest); i {
 			case 0:
 				return &v.state
@@ -756,7 +765,7 @@ func file_MyGraderList_backend_rating_rating_proto_init() {
 				return nil
 			}
 		}
-		file_MyGraderList_backend_rating_rating_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_mygraderlist_backend_rating_rating_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*FindByUserIdRatingResponse); i {
 			case 0:
 				return &v.state
@@ -768,7 +777,7 @@ func file_MyGraderList_backend_rating_rating_proto_init() {
 				return nil
 			}
 		}
-		file_MyGraderList_backend_rating_rating_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_mygraderlist_backend_rating_rating_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*CreateRatingRequest); i {
 			case 0:
 				return &v.state
@@ -780,7 +789,7 @@ func file_MyGraderList_backend_rating_rating_proto_init() {
 				return nil
 			}
 		}
-		file_MyGraderList_backend_rating_rating_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+		file_mygraderlist_backend_rating_rating_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*CreateRatingResponse); i {
 			case 0:
 				return &v.state
@@ -792,7 +801,7 @@ func file_MyGraderList_backend_rating_rating_proto_init() {
 				return nil
 			}
 		}
-		file_MyGraderList_backend_rating_rating_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
+		file_mygraderlist_backend_rating_rating_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*UpdateRatingRequest); i {
 			case 0:
 				return &v.state
@@ -804,7 +813,7 @@ func file_MyGraderList_backend_rating_rating_proto_init() {
 				return nil
 			}
 		}
-		file_MyGraderList_backend_rating_rating_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
+		file_mygraderlist_backend_rating_rating_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*UpdateRatingResponse); i {
 			case 0:
 				return &v.state
@@ -816,7 +825,7 @@ func file_MyGraderList_backend_rating_rating_proto_init() {
 				return nil
 			}
 		}
-		file_MyGraderList_backend_rating_rating_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
+		file_mygraderlist_backend_rating_rating_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*DeleteRatingRequest); i {
 			case 0:
 				return &v.state
@@ -828,7 +837,7 @@ func file_MyGraderList_backend_rating_rating_proto_init() {
 				return nil
 			}
 		}
-		file_MyGraderList_backend_rating_rating_proto_msgTypes[10].Exporter = func(v interface{}, i int) interface{} {
+		file_mygraderlist_backend_rating_rating_proto_msgTypes[10].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*DeleteRatingResponse); i {
 			case 0:
 				return &v.state
@@ -845,18 +854,18 @@ func file_MyGraderList_backend_rating_rating_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_MyGraderList_backend_rating_rating_proto_rawDesc,
+			RawDescriptor: file_mygraderlist_backend_rating_rating_proto_rawDesc,
 			NumEnums:      0,
 			NumMessages:   11,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_MyGraderList_backend_rating_rating_proto_goTypes,
-		DependencyIndexes: file_MyGraderList_backend_rating_rating_proto_depIdxs,
-		MessageInfos:      file_MyGraderList_backend_rating_rating_proto_msgTypes,
+		GoTypes:           file_mygraderlist_backend_rating_rating_proto_goTypes,
+		DependencyIndexes: file_mygraderlist_backend_rating_rating_proto_depIdxs,
+		MessageInfos:      file_mygraderlist_backend_rating_rating_proto_msgTypes,
 	}.Build()
-	File_MyGraderList_backend_rating_rating_proto = out.File
-	file_MyGraderList_backend_rating_rating_proto_rawDesc = nil
-	file_MyGraderList_backend_rating_rating_proto_goTypes = nil
-	file_MyGraderList_backend_rating_rating_proto_depIdxs = nil
+	File_mygraderlist_backend_rating_rating_proto = out.File
+	file_mygraderlist_backend_rating_rating_proto_rawDesc = nil
+	file_mygraderlist_backend_rating_rating_proto_goTypes = nil
+	file_mygraderlist_backend_rating_rating_proto_depIdxs = nil
 }

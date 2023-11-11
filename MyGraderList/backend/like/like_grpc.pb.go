@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.3.0
 // - protoc             v4.24.4
-// source: MyGraderList/backend/like/like.proto
+// source: mygraderlist/backend/like/like.proto
 
 package like
 
@@ -179,5 +179,5 @@ var LikeService_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "MyGraderList/backend/like/like.proto",
+	Metadata: "mygraderlist/backend/like/like.proto",
 }

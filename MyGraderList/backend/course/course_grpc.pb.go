@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.3.0
 // - protoc             v4.24.4
-// source: MyGraderList/backend/course/course.proto
+// source: mygraderlist/backend/course/course.proto
 
 package course
 
@@ -216,5 +216,5 @@ var CourseService_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "MyGraderList/backend/course/course.proto",
+	Metadata: "mygraderlist/backend/course/course.proto",
 }

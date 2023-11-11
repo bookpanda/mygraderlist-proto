@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.3.0
 // - protoc             v4.24.4
-// source: MyGraderList/backend/rating/rating.proto
+// source: mygraderlist/backend/rating/rating.proto
 
 package rating
 
@@ -253,5 +253,5 @@ var RatingService_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "MyGraderList/backend/rating/rating.proto",
+	Metadata: "mygraderlist/backend/rating/rating.proto",
 }
