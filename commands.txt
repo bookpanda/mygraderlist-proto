@@ -1,5 +1,5 @@
 go mod tidy
 
-git tag v0.1.4
-git push origin v0.1.4
-GOPROXY=proxy.golang.org go list -m github.com/bookpanda/mygraderlist-proto@v0.1.4
+git tag v0.1.5
+git push origin v0.1.5
+GOPROXY=proxy.golang.org go list -m github.com/bookpanda/mygraderlist-proto@v0.1.5
